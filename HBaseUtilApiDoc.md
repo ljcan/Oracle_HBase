@@ -35,7 +35,9 @@ get(table,rowkey);
 `public static void putData(HTable table,String cf,String rowKey,Map<String,String> keyValue)`
 
 ```
+//指定列簇
 String cf="cf";
+//指定rowKey
 String rowKey = "key";
 Map<String,String> keyValue = new HashMap<String,String>();
 //添加需要加入的列值对
