@@ -38,6 +38,7 @@ get(table,rowkey);
 String cf="cf";
 String rowKey = "key";
 Map<String,String> keyValue = new HashMap<String,String>();
+//添加需要加入的列值对
 keyValue.put("column1","value1");
 keyValue.put("column2","value2");
 putData(table,cf,rowKey,keyValue);
@@ -49,6 +50,7 @@ putData(table,cf,rowKey,keyValue);
 
 ```
 List<String> columns = new ArrayList<String>();
+//添加需要删除的列名
 columns.add("column1");
 columns.add("column2");
 deleteData(table,rowKey,cf,columns);
